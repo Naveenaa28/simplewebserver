@@ -204,6 +204,7 @@ content = """
 </body>
 
 </html>
+"""
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -217,6 +218,7 @@ httpd = HTTPServer(server_address, MyHandler)
 
 print("my webserver is running...")
 httpd.serve_forever()
+```
 
 
 ## OUTPUT:
